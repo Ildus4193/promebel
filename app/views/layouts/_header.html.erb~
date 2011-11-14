@@ -1,0 +1,39 @@
+<div id="header">
+
+  <div id="header_top">
+
+    <%= image_tag "img/logo.png", :style => "position: absolute;" %>
+
+    <div style=" width: 250px; left: 210px; position: relative;">
+
+      <span stylee=" font: 25px Verdana, Geneva, sans-serif bold; color: #fff; "> Изготовление корпусной </br>мебели на заказ</span>
+
+    </div>
+
+    <div style=" width: 400px; position: absolute; right: 20px; top: 20px;">
+
+      <%= image_tag "img/phone_number.png" %>
+
+      <%= image_tag "img/phone.png", :style => "position: relative; top: -5px;"%>
+
+    </div>
+
+  </div>
+
+  <div id="nav">
+
+    <ul>
+
+      <li><%= link_to_pages('О компании', "about") %></li>
+
+      <li><%= link_to_pages('Магазины', "shops") %></li>
+
+      <li><%= link_to_pages('Каталог', "catalog") %></li>
+
+      <li><%= link_to_pages('Контакты', "contacts") %></li>
+
+    </ul>
+
+  </div>
+
+</div>
