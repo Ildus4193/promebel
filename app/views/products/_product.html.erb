@@ -2,13 +2,7 @@
 <div class="group_gallery" style=" height: 480px;">
   <div style=" height: 35px; width: 165px;">
     <p><%= product.name %></p>
-    <p><%= product.description %>
-    <% if admin_signed_in? %>
-        <%= link_to 'Удалить', product,
-          :confirm => 'Are you sure?',
-          :method => :delete %>
-      <% end %>
-    </p>
+    <p><%= product.description %></p>
     </div>
 <% if i> 3 %>
    <div style="clear: left; padding-bottom: 35px;"></div>

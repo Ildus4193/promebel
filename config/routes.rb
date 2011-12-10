@@ -3,8 +3,9 @@ ProMebel::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :products
-  resources :categories
+  resources :categories do
+    resources :products
+  end
 
 
   resources :pages
