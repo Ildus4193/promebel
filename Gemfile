@@ -11,6 +11,7 @@ gem 'paperclip'
 gem 'high_voltage', '0.9.3'
 gem 'jquery-rails'
 gem 'ckeditor', '3.4.2.pre'
+gem 'activeadmin'
 
 # Use unicorn as the web server
 # gem 'unicorn'

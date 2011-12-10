@@ -1,8 +1,11 @@
 ProMebel::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   resources :products
   resources :categories
 
-  devise_for :admins
 
   resources :pages
   root :to => "pages#home"
