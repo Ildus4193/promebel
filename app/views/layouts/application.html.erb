@@ -14,21 +14,12 @@
   <div id="section_top"></div>
 
   <div id="sidebar_right">
-
     <ul>
-
-      <li><%= link_to_pages('Фурнитура', "furnitura") %></li>
-
-      <li><%= link_to_pages('Столешницы', "stol") %></li>
-
-      <li><%= link_to_pages('Встраиваемая</br>техника', "tex") %></li>
-
-      <li><%= link_to_pages('Мойки и</br>смесители', "moika") %></li>
-
-      <li><%= link_to_pages('Аксессуары', "akcessuar") %></li>
-
+      <% @catalog_links.each do |catalog_link| %>
+        <li><%= link_to raw(catalog_link.name), category_path(:id => catalog_link) %></li>
+      <% end %>
     </ul>
-
+    <ul>
   </div>
 
   <div id="section">

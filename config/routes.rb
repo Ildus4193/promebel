@@ -1,4 +1,7 @@
 ProMebel::Application.routes.draw do
+  resources :products
+  resources :categories
+
   devise_for :admins
 
   resources :pages
